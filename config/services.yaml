@@ -1,0 +1,30 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Domain\:
+        resource: '../src/Domain/'
+
+    Application\:
+        resource: '../src/Application/'
+
+    Infrastructure\:
+        resource: '../src/Infrastructure/'
+        exclude:
+            - '../src/Infrastructure/Persistence/Models/'
+
+    Infrastructure\Messaging\ClaimEventPublisher:
+        arguments:
+            $amqpUrl: '%env(RABBITMQ_URL)%'
+
+    Infrastructure\Messaging\ClaimWorkerCommand:
+        arguments:
+            $amqpUrl: '%env(RABBITMQ_URL)%'
+
+    Domain\Policy\Repositories\PolicyRepositoryInterface:
+        alias: Infrastructure\Persistence\Repositories\DoctrinePolicyRepository
+
+    Domain\Claim\Repositories\ClaimRepositoryInterface:
+        alias: Infrastructure\Persistence\Repositories\DoctrineClaimRepository
