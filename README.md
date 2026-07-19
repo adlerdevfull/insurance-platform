@@ -1,4 +1,7 @@
-# Desafio 8 — Insurance Platform
+# Insurance Platform
+
+
+> **Languages / Idiomas / Idiomas:** [English](#-english) · [Español](#-español) · [Português](#-português)
 
 ---
 
@@ -27,6 +30,25 @@ src/
 ├── Application/         # Use cases (Command Handlers)
 └── Infrastructure/      # Adapters (Doctrine, HTTP, RabbitMQ)
 ```
+
+### Delivery phases
+
+This repository was built in progressive phases (see commit history):
+
+| Phase | Focus |
+|-------|--------|
+| 1. Scaffold | Bootstrap Symfony project and ignore rules |
+| 2. Domain | Entities, enums and repository ports (pure PHP) |
+| 3. Application | Command handlers / use cases |
+| 4. Infrastructure | Doctrine models and repository adapters |
+| 5. API & security | HTTP controllers, JWT and config |
+| 6. Database | Migrations and seed data |
+| 7. Messaging | RabbitMQ publishers and workers (when applicable) |
+| 8. Docker | Local Docker Compose stack |
+| 9. Frontend tooling | Vue 3 + TypeScript + Vite scaffold |
+| 10. Frontend UI | Application pages and API client |
+| 11. Tests | Domain unit tests |
+| 12. Docs & ops | Multi-language README, CI, Swarm/monitoring (when applicable) |
 
 ### How to run
 
@@ -80,6 +102,25 @@ src/
 └── Infrastructure/      # Adaptadores (Doctrine, HTTP, RabbitMQ)
 ```
 
+### Fases de entrega
+
+Este repositorio se construyó en fases progresivas (ver historial de commits):
+
+| Fase | Enfoque |
+|-------|--------|
+| 1. Scaffold | Bootstrap del proyecto Symfony e ignore rules |
+| 2. Dominio | Entidades, enums e interfaces de repositorio (PHP puro) |
+| 3. Aplicación | Command handlers / casos de uso |
+| 4. Infraestructura | Models Doctrine y adapters de repositorio |
+| 5. API y seguridad | Controllers HTTP, JWT y configuración |
+| 6. Base de datos | Migraciones y datos seed |
+| 7. Mensajería | Publishers y workers RabbitMQ (cuando aplique) |
+| 8. Docker | Stack Docker Compose local |
+| 9. Frontend tooling | Scaffold Vue 3 + TypeScript + Vite |
+| 10. Frontend UI | Páginas de la aplicación y cliente API |
+| 11. Tests | Tests unitarios de dominio |
+| 12. Docs & ops | README multi-idioma, CI, Swarm/monitoring (cuando aplique) |
+
 ### Cómo ejecutar
 
 ```bash
@@ -131,6 +172,25 @@ src/
 ├── Application/         # Casos de uso (Command Handlers)
 └── Infrastructure/      # Adaptadores (Doctrine, HTTP, RabbitMQ)
 ```
+
+### Fases de entrega
+
+Este repositório foi construído em fases progressivas (ver histórico de commits):
+
+| Fase | Foco |
+|-------|--------|
+| 1. Scaffold | Bootstrap do projeto Symfony e ignore rules |
+| 2. Domínio | Entidades, enums e portas de repositório (PHP puro) |
+| 3. Aplicação | Command handlers / casos de uso |
+| 4. Infraestrutura | Models Doctrine e adapters de repositório |
+| 5. API e segurança | Controllers HTTP, JWT e configuração |
+| 6. Banco de dados | Migrations e dados seed |
+| 7. Mensageria | Publishers e workers RabbitMQ (quando aplicável) |
+| 8. Docker | Stack Docker Compose local |
+| 9. Frontend tooling | Scaffold Vue 3 + TypeScript + Vite |
+| 10. Frontend UI | Páginas da aplicação e cliente da API |
+| 11. Testes | Testes unitários de domínio |
+| 12. Docs & ops | README multi-idioma, CI, Swarm/monitoring (quando aplicável) |
 
 ### Como executar
 
