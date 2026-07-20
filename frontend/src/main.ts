@@ -3,6 +3,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import './style.css'
 
+// restore preferred UI language
+const savedLocale = localStorage.getItem('locale')
+if (savedLocale) document.documentElement.lang = savedLocale
+
 import Login from './pages/Login.vue'
 import Dashboard from './pages/Dashboard.vue'
 import Policies from './pages/Policies.vue'
