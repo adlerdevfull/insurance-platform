@@ -43,10 +43,7 @@
           {{ t('claims.submit') }}
         </button>
         <button
-          @click="
-            showForm = false
-            formError = null
-          "
+          @click="closeForm"
           class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm"
         >
           {{ t('claims.cancel') }}
@@ -134,6 +131,11 @@ const load = async () => {
 }
 
 onMounted(load)
+
+const closeForm = () => {
+  showForm.value = false
+  formError.value = null
+}
 
 const reportClaim = async () => {
   formError.value = null
